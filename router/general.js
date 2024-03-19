@@ -88,17 +88,5 @@ public_users.get('/review/:isbn', function (req, res) {
   return res.status(200).json({ data: books[isbn].reviews });
 });
 
-// const getAllBooks = async (req, res) => {
-//   try {
-//     const book = await books.findAll();
-//     res.json(book);
-//   } catch (error) {
-//     res.status(500).json({ message: "Internal Server Error!!" });
-//   }
-// };
-
-// public_users.get("/", getAllBooks);
-
-
 
 module.exports.general = public_users;
